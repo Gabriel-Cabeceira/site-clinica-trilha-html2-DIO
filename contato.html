@@ -7,15 +7,41 @@
     <title>A.M.E.C</title>
     <link rel="stylesheet" href="base.css">
 </head>
+
+<style>
+    .end{
+        width: 440px;
+        height: 220px;
+    }
+    .endereco{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px; 
+    }
+    .formulario{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        border-radius: 15px;
+    }
+    .form-lines{
+        padding: 2px;
+    }
+    #form-center{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
 <body>
     <main class="main-conteiner">
         <nav class="menu">
             <!-- Aqui vai o seu menu -->
             <ul id="navbar" class="conteiner">
-                <li><a href="index.html">Página Principal</a></li>
-                <li><a href="sobre.html">Sobre a Clínica</a></li>
-                <li><a href="horario.html">Horário de Atendimento</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a rel="next" href="index.html">Página Principal</a></li>
+                <li><a rel="next" href="sobre.html">Sobre a Clínica</a></li>
+                <li><a rel="next" href="horario.html">Horário de Atendimento</a></li>
+                <li><a rel="next" href="contato.html">Contato</a></li>
             </ul>
         </nav>
 
@@ -26,11 +52,55 @@
             </header>
     
             <article class="content">
-                <div class="text conteiner">
-                    <h1><abbr title="A.M.E.C">Contato</abbr></h1>
-                    <p>Aqui na <strong>A.M.E.C<sup> ®</sup></strong> você encontra o melhor das seguintes especialidades: <i>Clínica Geral, Psicologia, Pediadria, Oftalmologia</i>. Com profissionais renomados e completamente capacitados para atender você e quem você ama.Venha nos conhecer</p>
+                <div id="teste" class="conteiner">
+                    <fieldset class="endereco">
+                        <legend>Endereço</legend>
+                        <div class="end">
+                            <div class="conteiner">
+                                <p><strong>Endereço:</strong> Av. Francisco Ribeiro, 1140 - Santa Mônica, Uberlândia - MG, 38408-186</p>
+                                <p><strong>Teleone:</strong> (34) 3239-2200</p>
+                                <p><strong>E-mail:</strong> especialidadesclinicas@amec.com.br</p>
+                            </div>
+                        </div>
+                        <div class="end">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.0532253347583!2d-48.2400394851011!3d-18.92903808717247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a443f2d0438787%3A0x1c20369c70c4e696!2sVitis%20Medcenter!5e0!3m2!1spt-BR!2sbr!4v1668701176208!5m2!1spt-BR!2sbr" width="420" height="210" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <section id="form-center">
+                        <fieldset class="formulario">
+                            <legend>Contato</legend>
+                            <div>
+                                <div>
+                                    <form autocomplete="on" method="get" name="form-contato"> <!--usei o get para não dar erro ao enviar-->
+                                        <div class="form-lines">
+                                            <label for="--input"><strong>Nome:</strong></label><br>
+                                            <input name="nome" type="text"><br>
+                                        </div>
+                                        <div class="form-lines" >
+                                            <label for="--input"><strong>E-mail:</strong></label><br>
+                                            <input name="email" type="email"><br>
+                                        </div>
+                                        <div class="form-lines" >
+                                            <label for="--input"><strong>Assunto:</strong></label><br>
+                                            <input name="assunto" type="text"><br>
+                                        </div>
+                                        <div class="form-lines" >
+                                            <label for="--textarea"><strong>Mensagem:</strong> </label><br>
+                                            <textarea name="mensagem" id="msg" cols="30" rows="4"></textarea>
+                                        </div>
+                                        <div>
+                                            <button type="submit">Enviar</button>
+                                            <button type="reset">Limpar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </section>
                 </div>
-                <!-- Aqui vai o seu conteúdo -->
+                     <!-- Aqui vai o seu conteúdo -->
             </article>
     
             <footer class="footer">
@@ -40,14 +110,15 @@
                         <ul>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Reclame Aqui</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
                         </ul>
                     </div>
                     <div>
                         <h1>Redes Sociais</h1>
                         <ul>
-                            <li><a href="#">WhatsApp</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Twitter</a></li>
+                            <li><a target="_blank" rel="external" href="#">Facebook</a></li>
+                            <li><a target="_blank" rel="external" href="#">Instagram</a></li>
+                            <li><a target="_blank" rel="external" href="#">Twitter</a></li>
                         </ul>
                     </div>
                 </div>

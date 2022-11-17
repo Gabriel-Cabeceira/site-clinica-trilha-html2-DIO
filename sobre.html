@@ -7,28 +7,75 @@
     <title>A.M.E.C</title>
     <link rel="stylesheet" href="base.css">
 </head>
+
+<style>
+    .profissional{
+        width: 170px;
+        height: 170px;
+    }
+    #corpo-clinico{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
 <body>
     <main class="main-conteiner">
         <nav class="menu">
             <!-- Aqui vai o seu menu -->
             <ul id="navbar" class="conteiner">
-                <li><a href="index.html">Página Principal</a></li>
-                <li><a href="sobre.html">Sobre a Clínica</a></li>
-                <li><a href="horario.html">Horário de Atendimento</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a rel="next" href="index.html">Página Principal</a></li>
+                <li><a rel="next" href="sobre.html">Sobre a Clínica</a></li>
+                <li><a rel="next" href="horario.html">Horário de Atendimento</a></li>
+                <li><a rel="next" href="contato.html">Contato</a></li>
             </ul>
         </nav>
 
         <section class="main">
             <header class="header">
-                <img src="imagens/imagem-capa-3-1000px.jpg" alt="Imagem de capa de uma médica com estetoscópio no pescoço e ao fundo e embaçado, outro médico levemente inclinado em uma mesa">
+                <img src="imagens/imagem-capa-3-1000px.jpg" alt="Imagem de capa com seis médicos posicionados de frente.">
                     <!-- Aqui vai o seu header -->
             </header>
     
             <article class="content">
                 <div class="text conteiner">
-                    <h1><abbr title="A.M.E.C">Sobre</abbr></h1>
-                    <p>Aqui na <strong>A.M.E.C<sup> ®</sup></strong> você encontra o melhor das seguintes especialidades: <i>Clínica Geral, Psicologia, Pediadria, Oftalmologia</i>. Com profissionais renomados e completamente capacitados para atender você e quem você ama.Venha nos conhecer</p>
+                    <h1>Sobre a <abbr title="Aline Mendes Especialidades Clínicas">A.M.E.C<sup> ®</sup></abbr></h1>
+                    <p>Com mais de 15 anos de experiência, somos especialistas em transmitir conforto, praticidade e transparencia aos nossos pacientes. Temos profissionais capacitados nas áreas de <i>Clínica Geral, Psicologia, Pediadria e Oftalmologia.</i></p>
+
+                    <br>
+
+                    <h1>Nosso Corpo Clínico</h1>
+
+                    <article id="corpo-clinico">
+                        <div class="profissional">
+                            <i>
+                                <h2>Clínica Geral</h2>
+                                <p>Dr. Leonardo Francisco</p>
+                                <p>CRM-MG 32100</p>
+                            </i>
+                        </div>
+                        <div class="profissional">
+                            <i>
+                                <h2>Psicologia</h2>
+                                <p>Dra. Camila Ribeiro</p>
+                                <p>CRP 04/03002</p>
+                            </i>
+                        </div>
+                        <div class="profissional">
+                            <i>
+                                <h2>Pediatria</h2>
+                                <p>Dra. Maíra Almeida</p>
+                                <p>CRM-MG 12345</p>
+                            </i>
+                        </div>
+                        <div class="profissional">
+                            <i>
+                                <h2>Oftalmologia</h2>
+                                <p>Dr. Fabio Gasparin</p>
+                                <p>CRM-MG 98745</p>
+                            </i>
+                        </div>
+                    </article>
                 </div>
                 <!-- Aqui vai o seu conteúdo -->
             </article>
@@ -40,14 +87,15 @@
                         <ul>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Reclame Aqui</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
                         </ul>
                     </div>
                     <div>
                         <h1>Redes Sociais</h1>
                         <ul>
-                            <li><a href="#">WhatsApp</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Twitter</a></li>
+                            <li><a target="_blank" rel="external" href="#">Facebook</a></li>
+                            <li><a target="_blank" rel="external" href="#">Instagram</a></li>
+                            <li><a target="_blank" rel="external" href="#">Twitter</a></li>
                         </ul>
                     </div>
                 </div>

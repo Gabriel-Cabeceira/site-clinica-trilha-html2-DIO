@@ -7,28 +7,85 @@
     <title>A.M.E.C</title>
     <link rel="stylesheet" href="base.css">
 </head>
+
+<style>
+    #tabela{
+        margin: auto;
+        width: 680px;
+    }
+    thead{
+        background-color: rgba(126, 126, 255, 0.281);
+    }
+    tbody > tr:hover{
+        background-color: rgba(126, 126, 255, 0.281);
+        cursor: pointer;
+    }
+</style>
+
 <body>
     <main class="main-conteiner">
         <nav class="menu">
             <!-- Aqui vai o seu menu -->
             <ul id="navbar" class="conteiner">
-                <li><a href="index.html">Página Principal</a></li>
-                <li><a href="sobre.html">Sobre a Clínica</a></li>
-                <li><a href="horario.html">Horário de Atendimento</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a rel="next" href="index.html">Página Principal</a></li>
+                <li><a rel="next" href="sobre.html">Sobre a Clínica</a></li>
+                <li><a rel="next" href="horario.html">Horário de Atendimento</a></li>
+                <li><a rel="next" href="contato.html">Contato</a></li>
             </ul>
         </nav>
 
         <section class="main">
             <header class="header">
-                <img src="imagens/imagem-capa-2-1000px.jpg" alt="Imagem de capa de uma médica com estetoscópio no pescoço e ao fundo e embaçado, outro médico levemente inclinado em uma mesa">
+                <img src="imagens/imagem-capa-2-1000px.jpg" alt="Imagem de capa de uma recepcionista e dois médicos atendendo um paciente na recepção">
                     <!-- Aqui vai o seu header -->
             </header>
     
             <article class="content">
                 <div class="text conteiner">
-                    <h1><abbr title="A.M.E.C">horário</abbr></h1>
-                    <p>Aqui na <strong>A.M.E.C<sup> ®</sup></strong> você encontra o melhor das seguintes especialidades: <i>Clínica Geral, Psicologia, Pediadria, Oftalmologia</i>. Com profissionais renomados e completamente capacitados para atender você e quem você ama.Venha nos conhecer</p>
+                    <hr>
+                        <h1>Horários de Atendimento</h1>
+                        <table cellpadding="4px" id="tabela" cellspacing="0" sumary="Tabela de horários de atendimento e valor da consulta">
+                            <thead>
+                                <tr>
+                                    <th>Especialidade</th>
+                                    <th>Segunda a Sexta</th>
+                                    <th>Sábados</th>
+                                    <th>Feriados</th>
+                                    <th>Valor da Consulta</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Clínica geral</td>
+                                    <td>08h - 19h</td>
+                                    <td>08h - 14h</td>
+                                    <td>08h - 14h</td>
+                                    <td>R$ 300,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Psicologia</td>
+                                    <td>08h - 19h</td>
+                                    <td>08h - 14h</td>
+                                    <td>08h - 14h</td>
+                                    <td>R$ 150,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Pediadria</td>
+                                    <td>08h - 19h</td>
+                                    <td>08h - 18h</td>
+                                    <td>-</td>
+                                    <td>R$ 250,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Oftalmologia</td>
+                                    <td>08h - 19h</td>
+                                    <td>08h - 18h</td>
+                                    <td>-</td>
+                                    <td>R$ 190,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <hr>
                 </div>
                 <!-- Aqui vai o seu conteúdo -->
             </article>
@@ -40,14 +97,15 @@
                         <ul>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Reclame Aqui</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
                         </ul>
                     </div>
                     <div>
                         <h1>Redes Sociais</h1>
                         <ul>
-                            <li><a href="#">WhatsApp</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Twitter</a></li>
+                            <li><a target="_blank" rel="external" href="#">Facebook</a></li>
+                            <li><a target="_blank" rel="external" href="#">Instagram</a></li>
+                            <li><a target="_blank" rel="external" href="#">Twitter</a></li>
                         </ul>
                     </div>
                 </div>
