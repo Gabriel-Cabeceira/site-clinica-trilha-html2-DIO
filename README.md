@@ -12,3 +12,7 @@ Além de outros recursos falados nas aulas!
 _______________________________________________________________________________________
 
 Realizei algumas pequenas modificações no CSS apenas para padronizar à minha maneira e alterar algumas cores.
+
+###Link do site:
+
+<https://gabriel-cabeceira.github.io/site-clinica-trilha-html2-DIO/index.html>
